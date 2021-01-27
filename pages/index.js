@@ -1,12 +1,20 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+//import cenas from './api/sw.js';
 
-export default function Home() {  
+function Home() {  
   return (
     <div>
-      <h2>Parabéns! Você é bronze!</h2>
-      <p>Podes clicar <a href="/api/sw">aqui</a> para veres a minha api do SW xD</p>
-      <div id="emitter"></div>
+        <h1>I love Coffee</h1>
+        <Image
+          src="/coffee.jpg"
+          alt="Coffee"
+          width={1600}
+          height={1200}
+        />
     </div>
   )
 }
+
+export default Home;
