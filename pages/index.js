@@ -7,14 +7,21 @@ function Home() {
   return (
     <div>
         <h1>I love Coffee</h1>
-        <Image
-          src="/coffee.jpg"
-          alt="Coffee"
-          width={1600}
-          height={1200}
-        />
+        <video
+        autoPlay
+        loop
+        style={{
+          position: "relative",
+          width: "100%",
+          left: 0,
+          top: 0
+        }}
+        >
+        <source src="video.mp4" type="video/mp4" />
+      </video>
     </div>
   )
 }
+
 
 export default Home;
