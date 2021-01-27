@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 //import cenas from './api/sw.js';
 
-function Home() {  
+function Coffee() {  
   return (
     <div>
         <Link href="/">
@@ -30,4 +30,4 @@ function Home() {
 }
 
 
-export default Home;
+export default Coffee;
