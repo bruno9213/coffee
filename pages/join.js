@@ -2,7 +2,7 @@ import { Page, Text, Button, Row, useToasts } from "@geist-ui/react";
 import React, { useState } from "react";
 import Router from "next/router";
 import firebase from "firebase/app";
-import "firebase/auth";
+require("firebase/auth")
  
 import initFirebase from "../services/firebase";
 
