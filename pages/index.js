@@ -5,6 +5,9 @@ import Link from 'next/link'
 //import cenas from './api/sw.js';
 import firebase from "firebase/app";
 import "firebase/auth";
+import initFirebase from "../services/firebase";
+
+initFirebase();
 
 function Home() {
 
@@ -26,6 +29,16 @@ function Home() {
     )
 
   }
+
+  return (
+    <div>
+      <h1>Hello</h1>
+      <Link href="/join">
+          <a>Go to login page</a>
+        </Link>
+    </div>
+  )
+
 
 }
 
